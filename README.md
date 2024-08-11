@@ -1,3 +1,7 @@
+# Sovereign MC
+
+Sovereign MC is a minecraft geopolitical Nations server.
+
 # ExoticGarden
 
 ExoticGarden is a big addon to [Slimefun 4](https://github.com/TheBusyBiscuit/Slimefun4) which brings various new Plants, fruits, vegetables and food items to the game.
@@ -12,7 +16,7 @@ ExoticGarden is licensed under
 Click on the badge below to go to our "development" build page, where you can download the latest versions before they are released to the public. 
 But keep in mind: These builds are still in development and not guaranteed to work or to be stable.
 
-<p align="center">
+<p>
   <a href="https://thebusybiscuit.github.io/builds/TheBusyBiscuit/ExoticGarden/master/">
     <img src="https://thebusybiscuit.github.io/builds/TheBusyBiscuit/ExoticGarden/master/badge.svg" alt="Build Server"/>
   </a>
