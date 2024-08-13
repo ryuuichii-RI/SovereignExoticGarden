@@ -175,9 +175,8 @@ public class ExoticGarden extends JavaPlugin implements SlimefunAddon {
                     String miscTexture = jsonObject.get("texture").getAsString();
                     RecipeType miscRecipeType = getRecipeTypeFromJson(jsonObject);
                     ItemStack[] miscRecipe = calculateRecipeFromJson(jsonObject);
-                    ItemStack miscRecipeOutput = getItemFromJson(jsonObject);
 
-                    registerMisc(miscId, miscName, miscTexture, miscRecipeType, miscRecipe, miscRecipeOutput);
+                    registerMisc(miscId, miscName, miscTexture, miscRecipeType, miscRecipe);
                     break;
 
                 case "plant":
@@ -288,9 +287,9 @@ public class ExoticGarden extends JavaPlugin implements SlimefunAddon {
         }
     }
 
-    public void registerMisc(String id, String name, String texture, RecipeType recipeType, ItemStack[] recipe, ItemStack recipeOutput) {
+    public void registerMisc(String id, String name, String texture, RecipeType recipeType, ItemStack[] recipe) {
         SlimefunItemStack newMisc = new SlimefunItemStack(id, texture, name);
-        new SlimefunItem(miscItemGroup, newMisc, recipeType, recipe, recipeOutput).register(this);
+        new SlimefunItem(miscItemGroup, newMisc, recipeType, recipe, newMisc).register(this);
     }
 
     public void registerBerry(String name, ChatColor color, Color potionColor, PlantType type, String texture) {
@@ -494,7 +493,7 @@ public class ExoticGarden extends JavaPlugin implements SlimefunAddon {
     }
 
     public ItemStack getItemFromJson(JsonObject jsonObject) {
-        return gson.fromJson(jsonObject.get("recipe_output"), ItemStack.class);
+        return gson.fromJson(jsonObject.get("item"), ItemStack.class);
     }
 
 }

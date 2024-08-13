@@ -1,10 +1,52 @@
 [
   {
-    "a1": "x",
-    "a2": "y"
+    "type": "tree",
+    "name": "Oak Apple",
+    "texture": "cbb311f3ba1c07c3d1147cd210d81fe11fd8ae9e3db212a0fa748946c3633",
+    "color": "&c",
+    "potion_color": [255,0,255],
+    "juice": "Oak Apple Juice",
+    "pie": true,
+    "materials": ["DIRT", "GRASS_BLOCK"]
+
   },
   {
-    "a1": "foo",
-    "a2": "bar"
+    "type": "tree",
+    "name": "Coconut",
+    "texture" : "6d27ded57b94cf715b048ef517ab3f85bef5a7be69f14b1573e14e7e42e2e8",
+    "color": "&6",
+    "potion_color": [128,0,0],
+    "juice": "Coconut Milk",
+    "pie": false,
+    "materials": ["SAND"]
+
+  },
+  {
+    "type": "berry",
+    "name": "Grape",
+    "color": "RED",
+    "potion_color": [255,0,0],
+    "plant_type":  "BUSH",
+    "texture": "6ee97649bd999955413fcbf0b269c91be4342b10d0755bad7a17e95fcefdab0\""
+  },
+  {
+    "type": "misc",
+    "id": "ICE_CUBE",
+    "name": "&bIce Cube",
+    "texture": "9340bef2c2c33d113bac4e6a1a84d5ffcecbbfab6b32fa7a7f76195442bd1a2",
+    "recipe_type": "GRIND_STONE",
+    "recipe": [
+      {
+        "material": "ICE"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
   }
 ]
